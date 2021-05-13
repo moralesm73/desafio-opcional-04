@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 03</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/e3f9709de7.js" crossorigin="anonymous"></script>
+
+    <style>
+        html,body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            width: 100%;
+            height: 100%;
+        }
+        .navigation {
+            border: 1px solid #979797;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            width: 800px;
+        }
+        .navigation__logo i{
+            font-size: 3rem;
+            color: rgb(85, 85, 235);
+        }
+        .navigation__menu {
+            list-style: none;
+            font-family: 'KoHo', sans-serif;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        .navigation__menu li {
+            display: inline;
+        }
+        .navigation__menu li a {
+            padding: .2rem 1.2rem;
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <div class="navigation__logo">
+                <i class="fab fa-steam"></i>
+            </div>
+            <div class="navigation__contain">
+                <ul class="navigation__menu">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Entrevistas</a></li>
+                    <li><a href="#">Música</a></li>
+                    <li><a href="#">Tendencias</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

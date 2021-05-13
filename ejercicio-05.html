@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 05</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/e3f9709de7.js" crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 100%;
+        }
+        .boxing {
+            width: 800px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .boxing__image {
+            margin: .5rem;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .boxing--first .boxing__image {
+            flex-basis: 160px;
+        }
+        .boxing--first .boxing__image:nth-child(1){
+            background-image: url(https://images.pexels.com/photos/5698416/pexels-photo-5698416.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+            flex-grow: 1;
+            height: 180px;
+        }
+        .boxing--first .boxing__image:nth-child(2){
+            background-image: url(https://images.pexels.com/photos/5698363/pexels-photo-5698363.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+            flex-grow: 1;
+            height: 180px;
+        }
+        .boxing--first .boxing__image:nth-child(3){
+            background-image: url(https://images.pexels.com/photos/4148890/pexels-photo-4148890.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+            flex-grow: 1;
+            height: 180px;
+        }
+        .boxing--first .boxing__image:nth-child(4){
+            background-image: url(https://images.pexels.com/photos/4148893/pexels-photo-4148893.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+            flex-grow: 1;
+            height: 180px;
+        }
+        .boxing--second .boxing__image:nth-child(1){
+            background-image: url(https://images.pexels.com/photos/4148898/pexels-photo-4148898.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+            flex-grow: 1;
+            height: 320px;
+        }
+        .boxing--third .boxing__image:nth-child(1){
+            background-image: url(https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+            flex-grow: 1;
+            height: 180px;
+        }
+        .boxing--third .boxing__image:nth-child(2){
+            background-image: url(https://images.pexels.com/photos/2708981/pexels-photo-2708981.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+            flex-grow: 1;
+            height: 320px;
+        }
+        .boxing--third .boxing__image:nth-child(3){
+            background-image: url(https://images.pexels.com/photos/3829227/pexels-photo-3829227.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+            flex-grow: 1;
+            height: 180px;
+        }
+        .boxing--third .boxing__image:nth-child(4){
+            background-image: url(https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+            flex-grow: 1;
+            height: 320px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="boxing boxing--first">
+            <div class="boxing__image"></div>
+            <div class="boxing__image"></div>
+            <div class="boxing__image"></div>
+            <div class="boxing__image"></div>
+        </div>
+        <div class="boxing boxing--second">
+            <div class="boxing__image"></div>
+        </div>
+        <div class="boxing boxing--third">
+            <div class="boxing__image"></div>
+            <div class="boxing__image"></div>
+            <div class="boxing__image"></div>
+            <div class="boxing__image"></div>
+        </div>
+    </div>
+</body>
+</html>
